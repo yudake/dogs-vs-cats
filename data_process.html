@@ -11807,7 +11807,6 @@ div#notebook {
 <span class="kn">import</span> <span class="nn">os</span>
 <span class="kn">import</span> <span class="nn">cPickle</span> <span class="kn">as</span> <span class="nn">pickle</span>
 <span class="kn">from</span> <span class="nn">sklearn.utils</span> <span class="kn">import</span> <span class="n">shuffle</span>
-<span class="c1"># import pickle</span>
 </pre></div>
 
 </div>
@@ -11830,12 +11829,6 @@ div#notebook {
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">get_files</span><span class="p">(</span><span class="n">file_dir</span><span class="p">):</span>
-    <span class="sd">&#39;&#39;&#39;</span>
-<span class="sd">    Args:</span>
-<span class="sd">        file_dir: file directory</span>
-<span class="sd">    Returns:</span>
-<span class="sd">        list of images and labels</span>
-<span class="sd">    &#39;&#39;&#39;</span>
     <span class="n">dogs</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="n">label_dogs</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="n">cats</span> <span class="o">=</span> <span class="p">[]</span>
@@ -11878,33 +11871,9 @@ div#notebook {
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">file_dir</span> <span class="o">=</span> <span class="s1">&#39;/home/yudake/Desktop/cat_vs_dog/data/train/&#39;</span>
 <span class="n">image_list</span><span class="p">,</span> <span class="n">label_list</span> <span class="o">=</span> <span class="n">get_files</span><span class="p">(</span><span class="n">file_dir</span><span class="p">)</span>
 <span class="n">pickle</span><span class="o">.</span><span class="n">dump</span><span class="p">((</span><span class="n">image_list</span><span class="p">,</span> <span class="n">label_list</span><span class="p">),</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;data_process/train_image_label_list.p&#39;</span><span class="p">,</span> <span class="s1">&#39;wb&#39;</span><span class="p">))</span>
-<span class="n">file_dir</span> <span class="o">=</span> <span class="s1">&#39;/home/yudake/Desktop/cat_vs_dog/data/internet/&#39;</span>
-<span class="n">image_list</span><span class="p">,</span> <span class="n">label_list</span> <span class="o">=</span> <span class="n">get_files</span><span class="p">(</span><span class="n">file_dir</span><span class="p">)</span>
-<span class="n">pickle</span><span class="o">.</span><span class="n">dump</span><span class="p">((</span><span class="n">image_list</span><span class="p">,</span> <span class="n">label_list</span><span class="p">),</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;data_process/internet_image_label_list.p&#39;</span><span class="p">,</span> <span class="s1">&#39;wb&#39;</span><span class="p">))</span>
 </pre></div>
 
 </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-<div class="prompt"></div>
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>There are 12500 dogs
-There are 12500 cats
-[0, 0, 1, 0, 1]
-There are 8 dogs
-There are 8 cats
-[0, 0, 1, 1, 0]
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
