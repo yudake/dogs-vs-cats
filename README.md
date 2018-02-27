@@ -9,6 +9,8 @@ Author:yudake
 date:2018/2/25
 ```
 
+项目解析可以参考我的这篇[博文](http://yudake.xin/articles/2018/02/27/1519731183844.html)和相关代码。
+
 开发环境：
 
 - python2.x；
@@ -27,7 +29,7 @@ date:2018/2/25
 
 ## 数据
 
-![graph](https://github.com/yudake/dogs-vs-cats/blob/master/images/dogs-vs-cats_graph.png?raw=true)
+![graph](https://github.com/yudake/dogs-vs-cats/blob/master/images/graph.png?raw=true)
 
 测试集：训练集中的1000张图片。
 
@@ -42,3 +44,5 @@ date:2018/2/25
 可以发现，在训练集上的平均准确率在80%左右，而且可以发现准确率仍在上升。
 
 测试集的准确率为77%。受硬件制约，我们只训练了10个epoch。如果继续训练，可能准确率会增加。
+
+具体请看代码与博客。
